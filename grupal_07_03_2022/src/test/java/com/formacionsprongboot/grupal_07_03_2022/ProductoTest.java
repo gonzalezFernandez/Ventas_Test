@@ -29,7 +29,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 		
 		
 		@Test
-		@Rollback(false)
+		@Rollback(true)
 		public void testGuardarProducto() {
 			Producto producto=new Producto("Teclado","Teclado inalámbrico MX",30.50, 10);
 			Producto productoGuardado=productoDao.save(producto);
